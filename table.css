@@ -2,7 +2,6 @@ html,
 .todo-table{
   position: relative;
     display: flex;
-
   flex-direction: column;
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -11,7 +10,7 @@ html,
   line-height: 100px;
   color: #3f3e3e;
   text-align: center;
-
+  
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 

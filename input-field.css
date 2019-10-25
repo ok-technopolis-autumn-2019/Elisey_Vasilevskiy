@@ -3,7 +3,7 @@ html,
     display: flex;
     position: relative;
     flex-direction: row-reverse;
-    border-bottom: #E6E6E6 1px inset;
+    
 }
 
 .todo-input-text{

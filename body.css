@@ -6,7 +6,8 @@ body {
     background: #f5f5f5;
     margin: 0 auto;  
     min-width: 480px;
-   
+    width: 480px;
+    
 }
 
 body::before{
@@ -17,7 +18,7 @@ body::before{
     left: 2px;
     right: 2px;
     z-index: -1;
-    background-color: #FFFFFF;
+    background-color: #f5f5f5;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -29,7 +30,7 @@ body::after{
     left: 4px;
     right: 4px;
     z-index: -2;
-    background-color: #FFFFFF;
+    background-color: #f5f5f5;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
