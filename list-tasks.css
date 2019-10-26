@@ -32,6 +32,7 @@ input[type="checkbox"] {
 }
 
 .todo-input_task:before {
+    margin-left: 4px;
     content: " ";
     display: inline-block;
     margin-right: 10px;
@@ -58,11 +59,13 @@ input[type=checkbox]:checked + .todo-input_task:before {
 }
 
 input[type=checkbox]:checked + .todo-input_task + .task-item__text {
+  
     color: #CCCCCC;
     text-decoration: line-through;
 }
 
 .task-item__status:focus + .todo-input_task:before {
+   
     border: solid #4a8efc 1px;
     border-radius: 50%;
 }
