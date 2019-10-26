@@ -12,7 +12,6 @@
 .task-item__view{
     position: relative;
     display: flex;
-    
     font-family: Roboto, sans-serif;
     font-size: 20px;
     line-height: 45px;
@@ -20,9 +19,13 @@
     width: 100%;
     margin-top: 5px;
     margin-bottom: 5px;
+    
+}
+.task-item__text{
+    
+    width: 90%;
     text-align: left;
 }
-
 input[type="checkbox"] {
     position: absolute;
     left: -9999px;
@@ -80,7 +83,7 @@ input[type=checkbox]:checked + .todo-input_task + .task-item__text {
 }
 
 .task-item__delete {
-    position: absolute;
+    
     width: 35px;
     height: 35px;
     border: none;
