@@ -2,6 +2,7 @@
     position: relative;
     display: flex;
     flex-direction: row;
+    
     background: #FFFFFF;
     border-bottom: #E6E6E6 1px inset;
     min-height: 30px;
@@ -10,9 +11,11 @@
 
 .task-item__view{
     position: relative;
+    display: flex;
+    
     font-family: Roboto, sans-serif;
     font-size: 20px;
-    line-height: 21px;
+    line-height: 45px;
     word-break: break-word;
     width: 100%;
     margin-top: 5px;
@@ -62,9 +65,6 @@ input[type=checkbox]:checked + .todo-input_task + .task-item__text {
 }
 
 
-.task-item__view {
-    padding: 5px;
-}
 
 .todo-app__task-item-task-item:hover {
     background:rgb(253, 253, 253);
