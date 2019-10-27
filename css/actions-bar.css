@@ -27,7 +27,7 @@
 }
 
 .task-filter__input:focus:checked + .todo-option {
-    border: solid #5495ff 1px;
+    border: solid #4a8efc 1px;
 }
 
 input[type=radio]:checked + .todo-option {

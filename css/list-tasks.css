@@ -1,3 +1,4 @@
+
 .todo-app__task-item-task-item{
     position: relative;
     display: flex;
@@ -43,6 +44,7 @@ input[type="checkbox"] {
     background-image: url(checkbox.svg);
     background-color: transparent;
     background-repeat: no-repeat;
+    background-position: center;
     vertical-align: middle;
     border: solid transparent 1px;
     border-radius: 50%;
@@ -54,7 +56,7 @@ input[type=checkbox]:checked + .todo-input_task:before {
     background-image: url(checkbox_checked.svg);
     background-position: center;
     background-color: transparent;
-    border: solid #5ec4b1 1px;
+    border: solid #4a8efc 1px;
     border-radius: 50%;
 }
 

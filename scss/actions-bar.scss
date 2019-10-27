@@ -1,0 +1,42 @@
+@import "var.scss";
+@import "mixin.scss";
+
+.todo-app__actions-bar-actions-bar{
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    white-space: nowrap;
+    background: $background_color_list;
+    
+}
+
+.actions-bar__item,.task-clear-completed{
+    font-family: $text-font;
+    font-style: $text-style;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    color: $text-option-color;
+}
+
+
+.task-filter__input{
+    @include Invisible();
+}
+
+.task-filter__input:focus:checked + .todo-option {
+    border: solid $blue $border_width;
+}
+
+input[type=radio]:checked + .todo-option {
+    border: $border_width solid $dark_white;
+}
+.todo-option {
+    padding-left: 5px;
+    padding-right: 5px;
+    border: solid $transparent $border_width;
+}

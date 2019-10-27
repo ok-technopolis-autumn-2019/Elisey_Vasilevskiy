@@ -1,0 +1,22 @@
+@import "var.scss";
+@import "mixin.scss";
+
+html,
+.todo-table{
+  position: relative;
+    display: flex;
+  flex-direction: column;
+  font-family: $text-font;
+  font-style: $text-style;
+  font-weight: normal;
+  font-size: $text-size;
+  line-height: $text-line-height;
+  color: $text-list-color;
+  text-align: center;
+  
+
+}
+
+.todo-table{
+@include shadow(0,$background-color-list)
+}
