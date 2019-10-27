@@ -3,70 +3,89 @@
 
 <head>
     <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
     <title>TODO</title>
 </head>
  
 
 <body>
     <header class="todo-header" role="banner">
-        <h1>TODO</h1>
+        <h1>todos</h1>
     </header>
-    <table class="todo-table">
-        <thead>
-            <li class="todo-input-field" role="list">
-                <input type="text" value="What needs to be done?" />
-            </li>
-        </thead>
-        <li class="todo-app__task-item task-item">
+    
+    <section class="todo-table">
+            <div class="todo-input-field" role="divst">
+                <input class="todo-input-text" placeholder="Whats need to be done?" type="text"
+                               aria-label="entry a new task" autofocus="autofocus">
+                <button class="todo-down"></button>
+            </div>
+        <div class="todo-app__task-item-task-item">
             <div class="task-item__view">
-                <input type="checkbox" class="task-item__status" aria-label="Completed task: HTML" />
+                <input class="task-item__status" type="checkbox"  aria-label="Completed task: HTML" id="HTML-checkbox"/>
+                <label class="todo-input_task" for="HTML-checkbox">
+                </label>
                 <span class="task-item__text">HTML</span>
-                <button class="task-item__delete">Delete task</button>
+                <button class="task-item__delete" aria-label="delete-task"></button>
             </div>
             <div class="task-item__edit" hidden="hidden">
                 <input type="text" class="task-item__input" value="HTML" aria-label="Edit task: HTML" />
             </div>
-        </li>
-        <li class="todo-app__task-item task-item">
+        </div>
+        <div class="todo-app__task-item-task-item">
             <div class="task-item__view">
-                <input type="checkbox" class="task-item__status" aria-label="Completed task: CSS" />
+                <input class="task-item__status" type="checkbox" aria-label="Completed task: CSS" id="CSS-checkbox"/>
+                <label class="todo-input_task" for="CSS-checkbox">
+                </label>
                 <span class="task-item__text">CSS</span>
-                <button class="task-item__delete">Delete task</button>
+                <button class="task-item__delete" aria-label="delete-task"></button>
             </div>
             <div class="task-item__edit" hidden="hidden">
                 <input type="text" class="task-item__input" value="CSS" aria-label="Edit task: CSS" />
             </div>
-        </li>
-        <li class="todo-app__task-item task-item">
+        </div>
+        <div class="todo-app__task-item-task-item">
             <div class="task-item__view">
-                <input type="checkbox" class="task-item__status" aria-label="Completed task: JS" />
+                <input  class="task-item__status" type="checkbox" aria-label="Completed task: JS" id="JS-checkbox"/>
+                <label class="todo-input_task" for="JS-checkbox">
+                </label>
                 <span class="task-item__text">JS</span>
-                <button class="task-item__delete">Delete task</button>
+                <button class="task-item__delete"aria-label="delete-task"></button>
             </div>
             <div class="task-item__edit" hidden="hidden">
                 <input type="text" class="task-item__input" value="JS" aria-label="Edit task: JS" />
             </div>
-        </li>
+        </div>
 
 
-        <section class="todo-app__actions-bar actions-bar">
+        <section class="todo-app__actions-bar-actions-bar">
             <div class="actions-bar__item">
                 <div class="task-counter">3 items left</div>
             </div>
             <div class="actions-bar__item">
                 <div class="task-filter" role="group" aria-label="Filter tasks by status">
-                    <label class="task-filter__item">
-                        <input type="radio" class="task-filter__input" name="filter" checked="checked" value="All" />
-                        <span class="task-filter__text" aria-label="Select all tasks">All</span>
+                    <label class="task-filter__item_selectall">
+                        <input type="radio" class="task-filter__input" name="filter" checked="checked" value="All" id="Select-All" />
+                        <label class="todo-option" for="Select-All">
+                                <span class="task-filter__select" aria-label="Select all tasks">All</span>
+                        </label>
+                        
                     </label>
                     <label class="task-filter__item">
-                        <input type="radio" class="task-filter__input" name="filter" value="Active" />
-                        <span class="task-filter__text" aria-label="Select active tasks">Active</span>
+                        <input type="radio" class="task-filter__input" name="filter" value="Active"id="Select-Active" />
+                        <label class="todo-option" for="Select-Active">
+                                <span class="task-filter__select" aria-label="Select active tasks">Active</span>
+                        </label>
+                        
                     </label>
                     </label>
                     <label class="task-filter__item">
-                        <input type="radio" class="task-filter__input" name="filter" value="Completed" />
-                        <span class="task-filter__text" aria-label="Select complete tasks">Completed</span>
+                        <input type="radio" class="task-filter__input" name="filter" value="Completed" id="Select-Completed"/>
+                        <label class="todo-option" for="Select-Completed">
+                                <span class="task-filter__select" aria-label="Select complete tasks">Completed</span>
+                        </label>
+                        
                     </label>
                 </div>
             </div>
@@ -74,7 +93,7 @@
                 <button class="task-clear-completed">Clear completed</button>
             </div>
         </section>
-    </table>
+    </section>
 </body>
 
 </html>

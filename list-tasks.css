@@ -1,0 +1,96 @@
+.todo-app__task-item-task-item{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    
+    background: #FFFFFF;
+    border-bottom: #E6E6E6 1px inset;
+    min-height: 30px;
+}
+
+
+.task-item__view{
+    position: relative;
+    display: flex;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    line-height: 45px;
+    word-break: break-word;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+.task-item__text{
+    
+    width: 90%;
+    text-align: left;
+}
+input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+}
+
+.todo-input_task:before {
+    margin-left: 4px;
+    content: " ";
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 2px;
+    position: relative;
+    width: 36px;
+    height: 36px;
+    background-image: url(checkbox.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    border: solid transparent 1px;
+    border-radius: 50%;
+}
+
+input[type=checkbox]:checked + .todo-input_task:before {
+    width: 36px;
+    height: 36px;
+    background-image: url(checkbox_checked.svg);
+    background-position: center;
+    background-color: transparent;
+    border: solid #5ec4b1 1px;
+    border-radius: 50%;
+}
+
+input[type=checkbox]:checked + .todo-input_task + .task-item__text {
+  
+    color: #CCCCCC;
+    text-decoration: line-through;
+}
+
+.task-item__status:focus + .todo-input_task:before {
+   
+    border: solid #4a8efc 1px;
+    border-radius: 50%;
+}
+
+
+
+.todo-app__task-item-task-item:hover {
+    background:rgb(253, 253, 253);
+}
+
+.task-item__view:hover .task-item__delete,
+.task-item__delete:focus {
+  
+    background-image: url(close.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.task-item__delete {
+    
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: #FFFFFF;
+    right: 0;
+    
+}

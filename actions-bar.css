@@ -1,0 +1,40 @@
+.todo-app__actions-bar-actions-bar{
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    white-space: nowrap;
+    background: #FFFFFF;
+    
+}
+
+.actions-bar__item,.task-clear-completed{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    color: #8d8d8d;
+}
+
+
+.task-filter__input{
+    position: absolute;
+    left: -9999px;
+}
+
+.task-filter__input:focus:checked + .todo-option {
+    border: solid #5495ff 1px;
+}
+
+input[type=radio]:checked + .todo-option {
+    border: 1px solid rgb(231, 223, 223);
+}
+.todo-option {
+    padding-left: 5px;
+    padding-right: 5px;
+    border: solid transparent 1px;
+}
