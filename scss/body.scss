@@ -1,0 +1,24 @@
+@import "var.scss";
+@import "mixin.scss";
+html,
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: $background_color;
+    margin: 0 auto;  
+    min-width: $body-width;
+    width: $body-width;
+    
+}
+
+body::before{
+    @include Layer($layer-height,$layer-side-len,-1);
+    @include shadow(2px,$background_color);
+}
+
+body::after{
+    @include Layer($second-layer-height,$second-layer-side-len,-2);
+    @include shadow(2px,$background_color);
+}
+

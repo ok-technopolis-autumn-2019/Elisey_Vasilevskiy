@@ -1,0 +1,15 @@
+@import "var.scss";
+
+html,
+.todo-header{
+  position: relative;
+  font-family: $text-font;
+  font-style: $text-style;
+  font-weight: $header-text-weight;
+  font-size: $header-text-size;
+  line-height: $text-line-height;
+  color: $text-header-color;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  text-align: center;
+}

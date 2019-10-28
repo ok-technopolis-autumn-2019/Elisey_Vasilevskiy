@@ -1,0 +1,32 @@
+@import "var.scss";
+@import "mixin.scss";
+html,
+.todo-input-field{
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+    border-bottom: $border-color $border_width inset;
+}
+
+.todo-input-text{
+    position: relative;
+    font-family: $text-font;
+    height: 50px;
+    width: 88%;
+    padding-right: 7px;
+    padding-left: 7px;
+    font-size: 24px;
+    font-style: $text-input-style;
+    font-weight: 300;
+    line-height: 15px;
+    color:  $text-list-color;
+    border: 0;
+}
+
+.todo-down{
+    position: relative;
+    width: 12%;
+    height: 50px;
+    @include Image(url(down_pointer.svg),$background_color_list);
+    border: none;
+}

@@ -1,0 +1,33 @@
+@import "var.scss";
+
+@mixin Layer($layer-height, $layer-side-len, $z-index) {
+    content: ' ';
+    position: absolute;
+    top: 100%;
+    height: $layer-height;
+    left: $layer-side-len;
+    right: $layer-side-len;
+    z-index: $z-index;
+    }
+
+@mixin shadow($h,$b-color) {
+    background-color: $b-color;
+    box-shadow: 0 $h 4px $shdow-color;
+    }
+
+
+@mixin Image($image,$b-color) {
+    background-image: $image;
+    background-position: center;
+    background-color:$b-color;
+    background-repeat: no-repeat;
+  }
+
+  @mixin Invisible(){
+    position: absolute;
+    left: -9999px;
+  }
+  @mixin CheckBox($color){
+    border: solid $color $border_width;
+    border-radius: 50%;
+  }

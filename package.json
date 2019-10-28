@@ -1,0 +1,19 @@
+{
+  "name": "elisey_vasilevskiy",
+  "version": "1.0.0",
+  "description": "FRONTEND educational repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"echo \\\"Error: no test specified\\\" && exit 1\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ok-technopolis-autumn-2019/Elisey_Vasilevskiy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ok-technopolis-autumn-2019/Elisey_Vasilevskiy/issues"
+  },
+  "homepage": "https://github.com/ok-technopolis-autumn-2019/Elisey_Vasilevskiy#readme"
+}
